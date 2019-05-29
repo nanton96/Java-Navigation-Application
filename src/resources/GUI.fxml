@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="480.0" maxWidth="300.0" minHeight="480.0" minWidth="300.0" prefHeight="480.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ijp.controller.MyController">
+   <children>
+      <Button fx:id="leftButton" layoutX="175.0" layoutY="345.0" mnemonicParsing="false" onAction="#leftCommand" prefHeight="33.0" prefWidth="72.0" text="Left" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="220.0" />
+      <Button fx:id="rightButton" layoutX="355.0" layoutY="345.0" mnemonicParsing="false" onAction="#rightCommand" prefHeight="33.0" prefWidth="72.0" text="Right" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="6.0" />
+      <Button fx:id="forwardButton" layoutX="264.0" layoutY="345.0" mnemonicParsing="false" onAction="#forwardCommand" prefHeight="33.0" prefWidth="72.0" text="Forward" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+      <ImageView fx:id="imageView" fitHeight="384.0" fitWidth="288.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="35.0" />
+      <ImageView fx:id="itemView1" fitHeight="64.0" fitWidth="64.0" layoutX="208.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="88.0" AnchorPane.rightAnchor="28.0" />
+      <ImageView fx:id="itemView2" fitHeight="64.0" fitWidth="64.0" layoutX="144.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="88.0" AnchorPane.rightAnchor="92.0" />
+      <ImageView fx:id="itemView3" fitHeight="64.0" fitWidth="64.0" layoutX="48.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="88.0" AnchorPane.rightAnchor="156.0" />
+      <ImageView fx:id="itemView4" fitHeight="64.0" fitWidth="64.0" layoutX="208.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="188.0" AnchorPane.rightAnchor="28.0" />
+      <MenuBar fx:id="menuBar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu fx:id="pickUpMenu" mnemonicParsing="false" text="PickUp">
+               <items>
+                  <MenuItem fx:id="ClosePickUp" mnemonicParsing="false" text="Close" />
+               </items>
+          </Menu>
+            <Menu fx:id="putDownMenu" mnemonicParsing="false" text="PutDown">
+               <items>
+                  <MenuItem fx:id="ClosePutDown" mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="itemView5" fitHeight="64.0" fitWidth="64.0" layoutX="144.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="188.0" AnchorPane.rightAnchor="92.0" />
+   </children>
+</AnchorPane>
